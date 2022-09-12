@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+
+<body style="display: flex; justify-content: center; align-items: center; min-height:100vh">
+
+    <form 
+    align = "center"
+    style=" padding: 2em; width : 500px; border-radius: 1%; box-shadow: 2px 5px 10px rgba(0,0,0,0.6)"
+    onsubmit = "return validateRegistrationForm()"
+    autocomplete="off">
+
+    <h1>Student Registration Form</h1>
+    <p><b><i>Please Fill This Form To Get Registered!</i></b></p>
+    
+    <div align = "left">
+    <label id ="nameLabel" for = "name">Name</label>
+    <input type="text" id="name" style="width: 100%; height: 2.2em" placeholder="Enter Your Name" onblur="validateUserName()" size="15"/> <br>
+    <small style ="min-height: 1.4em; display: block;" id="nameError"></small>
+    
+    <div align = "left">
+    <label id="eMailLabel" for = "eMail">E-Mail</label>
+    <input type="text" id="eMail" style="width: 100%; height: 2.2em" placeholder="Enter Your E-Mail" onblur="validateEmail()" size="15"/> <br>
+    <small style ="min-height: 1.4em; display: block;" id="eMailError"></small>
+    
+    <div align = "left">
+    <label id="mobileNumberLabel" for="mobileNumber">Mobile Number</label>
+    <input type="number" id="mobileNumber" style="width: 100%; height: 2.2em" placeholder="Enter Your Phone Number" onblur="validateMobileNumber()" mobile number="15"/> <br>
+    <small style ="min-height: 1.4em; display: block;" id="mobileNumberError"></small>
+
+    <div align = "left">
+    <label id="genderLabel" for="Gender">Choose Your Gender:</label>
+        <select style="width: 100%; height: 2.2em" name="Gender" id="gender" onblur="validateGender()">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Prefer Not To Say">Prefer Not To Say</option>
+        </select>
+    <br>
+    <small style ="min-height: 1.4em; display: block;" id="genderError"></small>
+
+    <div align = "left">
+    <label id="technicalSkillsLabel" for ="technicalSkills">Technical Skills</label>
+    <input type="text" id="technicalSkills" style="width: 100%; height: 2.2em" placeholder="Enter Your Technical Skills" onblur="validateTechnicalSkills()" technical skills="15"/> <br>
+    <small style ="min-height: 1.4em; display: block;" id="technicalSkillsError"></small>
+
+    <div align = "left"> 
+    <label id="passswordLabel" for="password">Password</label>
+    <input type="password" id="password" style="width: 100%; height: 2.2em" placeholder="Password is Required" onblur="validatePassword()" passsword="15"/> <br> 
+    <small style ="min-height: 1.4em; display: block;" id="passwordError"></small>
+    
+    <div align = "left">
+    <label id="confirmPasswordLabel" for ="confirmPassword">Confirm Password</label>
+    <input type="password" id="confirmPassword" style="width: 100%; height: 2.2em" placeholder="Re-enter Your Password" onblur="validateConfirmPassword()" confirm passsword="15"/> <br>
+    <small style ="min-height: 1.4em; display: block;" id="confirmPasswordError"></small>
+    
+    </div>
+    
+    <button style="padding: 0.5em 0.8em; margin-right: 2em;" type="submit">Submit</button>
+    <button style="padding: 0.5em 0.8em;" type="reset">Reset</button>
+    <script src = "../JAVASCRIPT/registrationForm.js"></script>
+
+</form>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+
+    <p id="paraColorChange">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus repellendus, minus ducimus dolore error facere nemo quam consequuntur non voluptatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tempora quibusdam est, non quaerat dolore nesciunt sed tenetur voluptatibus! Possimus! <br>
+    <input type="text" placeholder="Input Something" id="t1"> </p>
+    
+    <!-- keyboard events -->
+    <input type="text" placeholder="Key Down" onkeydown="keyDown()"> <br> <br>
+    <input type="text" placeholder="Key Up" onkeyup="keyUp()"> <br> <br>
+    <input type="text" placeholder="On Focus" onfocus="onFocus()"> <br> <br>
+    <input type="text" placeholder="On Blur" onblur="onBlur()"> <br> <br>
+    <input type="text" placeholder="On Change" onblur="onChange()"> <br>
+    <br> <br>
+
+    <!-- mouse events -->
+    <button id="btn" onclick="button()">On Click Button</button> <br> <br>
+    <button id="btn" ondblclick="button1()">On Double Click Button</button> <br> <br>
+    <button id="btn" onmouseenter="button2()">On Mouse Enter</button> <br> <br>
+    <button id="btn" onmouseout="button3()">On Mouse Out</button> <br> <br>
+    <button id="btn" onmouseleave="button4()">On Mouse Leave</button> <br> <br>
+    <button id="btn" oncontextmenu="button5()">On Context Menu</button> <br> <br>
+    <button id="btn" onmousedown="button6()">On Mouse Down</button> <br> <br>
+    <button id="btn" onmouseup="button7()">On Mouse Up</button> <br> <br>
+    <button id="btn" onmousewheel="button8()">On Mouse Wheel</button> <br> <br>
+    <button id="btn" onmouseover="button9()">On Mouse Over</button> <br> <br>
+
+    <button id="paraColorChange" onclick="changeParagraphColor()">Click Here To Change Color Of Paragraph</button> <br> <br>
+
+    <!-- eventListener -->
+    <label id="genderLabel" for="Gender">Choose Your Gender:</label>
+        <select name="Gender" id="gender">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Prefer Not To Say">Prefer Not To Say</option>
+        </select>
+    
+        <br>
+        <br>
+        <input id="my1" type="text" placeholder="On Change"> <br> <br>
+
+    <script src="../JAVASCRIPT/eventsJS.js"></script>
+</body>
+</html>

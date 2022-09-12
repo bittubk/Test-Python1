@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#icon{
+    display: none;
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 3em;
+    background-color: cadetblue;
+    color: azure;
+    flex-wrap: wrap;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    margin: 2;
+    border-bottom: 2px;
+}
+
+.link:hover{
+    border-bottom: 2px solid white;
+}
+
+@media screen and (max-width:900px) {
+    .navLink{
+        display: none;
+        min-width: 100%;
+        margin:1em 0;
+        padding:0;
+    }
+    
+    .linkicon{
+        display: block;
+        text-align: center;
+        min-width: 100%;
+        margin: 0 !important ;
+        margin-top:1em !important ;
+        display:block;
+    }
+
+    #icon{
+        display: inline !important;
+        position:absolute;
+        top:1.5em;
+        right: 3em;
+    }
+
+    .Brand{
+        width: 100%;
+    }
+   
+}
+    
+.linkicon{
+    margin-left: 1.6em;
+}
